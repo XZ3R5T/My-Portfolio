@@ -184,18 +184,28 @@ nav li a:hover::after {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.p-cards .card p {
+    color: #cfcfcf;
+}
+
 .p-cards .card img {
     height: 400px;
 }
 
 /* PROJECT END */
 
-/* CONTACT START */
-.contact {
+
+.end {
+    width: auto;
     font-size: 20px;
-    margin: 100px;
     padding: 0;
+    min-height: 300px;
+    margin:300px 80px;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
 }
+
 /* CONTENT END */
 
 /* MEDIA QUERIES */
@@ -225,8 +235,12 @@ nav li a:hover::after {
         margin: 50px 20px 150px;
     }
 
-    .skills, .projects, .about {
+    .skills, .projects, .about{
         margin: 50px 20px;
+    }
+
+    .end{
+        margin: auto;
     }
 
     .s-cards .card img, .p-cards .card img {
@@ -254,7 +268,7 @@ nav li a:hover::after {
         margin: 50px 10px 100px;
     }
 
-    .skills, .projects, .about {
+    .skills, .projects, .about, .end {
         margin: 20px 10px;
     }
 
@@ -266,7 +280,7 @@ nav li a:hover::after {
         font-size: 18px;
     }
 
-    .about p {
+    .about p, .end p{
         font-size: 18px;
     }
 
