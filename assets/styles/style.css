@@ -80,7 +80,6 @@ nav li a:hover::after {
     z-index: 1; 
 }
 
-
 /* BANNER START */
 .banner {
     display: flex;
@@ -115,7 +114,6 @@ nav li a:hover::after {
 
 
 /* ABOUT START */
-
 .about {
     width: auto;
     font-size: 20px;
@@ -130,7 +128,6 @@ nav li a:hover::after {
 /* ABOUT END */
 
 /* SKILLS START */
-
 .skills {
     font-size: 20px;
     margin: 100px 100px;
@@ -163,7 +160,6 @@ nav li a:hover::after {
 /* SKILLS END */
 
 /* PROJECTS START */
-
 .projects {
     font-size: 20px;
     margin: 200px 100px;
@@ -174,7 +170,7 @@ nav li a:hover::after {
     text-align: center;
 }
 
-.p-cards{
+.p-cards {
     display: flex;
     justify-content: center;
     margin: 50px 0;
@@ -195,11 +191,86 @@ nav li a:hover::after {
 /* PROJECT END */
 
 /* CONTACT START */
-
 .contact {
     font-size: 20px;
     margin: 100px;
     padding: 0;
 }
-
 /* CONTENT END */
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    .banner {
+        flex-direction: column;
+        margin: 50px 50px 150px;
+    }
+
+    .code-window {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .banner {
+        margin: 50px 20px 150px;
+    }
+
+    .skills, .projects, .about {
+        margin: 50px 20px;
+    }
+
+    .s-cards .card img, .p-cards .card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-cards, .p-cards {
+        flex-direction: column;
+    }
+
+    .code-window {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .banner {
+        margin: 50px 10px 100px;
+    }
+
+    .skills, .projects, .about {
+        margin: 20px 10px;
+    }
+
+    .mytext h1 {
+        font-size: 24px;
+    }
+
+    .mytext h4 {
+        font-size: 18px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .s-title, .p-title {
+        font-size: 24px;
+    }
+}
