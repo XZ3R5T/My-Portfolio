@@ -177,7 +177,6 @@ nav li a:hover::after {
 .p-cards{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 50px 0;
     text-align: left;
 }
@@ -189,9 +188,10 @@ nav li a:hover::after {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* .p-cards .card img {
-    height: 300px;
-} */
+.p-cards .card img {
+    height: 400px;
+}
+
 /* PROJECT END */
 
 /* CONTACT START */
