@@ -5,10 +5,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS('particles-js', {
   particles: {
     number: {
-      value: 90,
+      value: 100,
       density: {
         enable: true,
-        value_area: 600
+        value_area: 800
       }
     },
     color: {
@@ -21,12 +21,12 @@ particlesJS('particles-js', {
         color: '#000000'
       },
       polygon: {
-        nb_sides: 5
+        nb_sides: 10
       },
     },
     opacity: {
-      value: 0.5,
-      random: false,
+      value: 0.2,
+      random: true,
       anim: {
         enable: false,
         speed: 1,
@@ -35,20 +35,20 @@ particlesJS('particles-js', {
       }
     },
     size: {
-      value: 0.4,
+      value: 0.1,
       random: true,
       anim: {
-        enable: false,
-        speed: 5,
+        enable: true,
+        speed: 7,
         size_min: 0.1,
         sync: false
       }
     },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 160,
       color: '#ffffff',
-      opacity: 0.6,
+      opacity: 0.4,
       width: 1.4
     },
     move: {

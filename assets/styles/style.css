@@ -24,13 +24,13 @@ body, html {
 /* NAVBAR START */
 nav {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem; 
     background-color: rgba(0, 0, 0, 0.5);
     text-align: right;
-    font-size: 24px;
+    font-size: 1.5rem; 
     position: fixed;
     z-index: 1000;
-    top: 0
+    top: 0;
 }
 
 nav ul {
@@ -42,13 +42,13 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px; 
+    margin: 0 0.9375rem; 
 }
 
 nav li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.625rem; 
     display: block;
     position: relative;
 }
@@ -57,9 +57,9 @@ nav li a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 0.125rem; 
     display: block;
-    margin-top: 5px;
+    margin-top: 0.3125rem; 
     right: 0;
     background: white;
     transition: width 0.3s ease;
@@ -77,8 +77,29 @@ nav li a:hover::after {
 
 /* CONTENT START */
 .content {
-    margin-top: 30vh;
+    margin-top: 14rem;
     z-index: 1; 
+}
+
+.mytext {
+    margin: 10rem; 
+}
+
+.socials {
+    display: flex;
+    position: relative;
+}
+
+.socials img{
+    width: 3rem;
+}
+
+.github-container {
+    margin-right: 0.5rem;
+}
+
+.github-container img {
+    border-radius: 5px;
 }
 
 /* BANNER START */
@@ -88,26 +109,26 @@ nav li a:hover::after {
     text-align: left;
     justify-content: space-between;
     color: white;
-    margin: 100px 100px 350px;
+    margin: 6.25rem 6.25rem 22rem; 
 }
 
 .code-window {
     width: 35%; 
-    height: 400px;
+    height: 25rem; 
     background-color: #2b2b2b;
     color: #cfcfcf;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.25rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
 }
 
 .code-animation {
     margin: 0;
     white-space: pre-wrap;
     font-family: 'Courier New', Courier, monospace; 
-    font-size: 14px;
+    font-size: 0.875rem; 
     overflow: hidden;
-    max-height: 400px;
+    max-height: 25rem; 
     overflow-y: auto;
 }
 
@@ -116,8 +137,8 @@ nav li a:hover::after {
 
 /* ABOUT START */
 .about {
-    font-size: 24px;
-    margin: 100px;
+    font-size: 1.5rem;
+    margin: 6.25rem; 
 }
 
 .about-container {
@@ -140,8 +161,8 @@ nav li a:hover::after {
 
 /* SKILLS START */
 .skills {
-    font-size: 20px;
-    margin: 100px 100px;
+    font-size: 1.25rem;
+    margin: 6.25rem 6.25rem; 
     padding: 0;
 }
 
@@ -153,27 +174,28 @@ nav li a:hover::after {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 3.125rem 0; 
     text-align: left;
 }
 
 .s-cards .card {
     color: #ffffff;
-    border-radius: 8px;
-    background-color: #2b2b2b;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem; 
+    background-color: rgba(43, 43, 43, 0.5); 
+    backdrop-filter: blur(1px); 
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
 }
 
 .s-cards .card img {
-    height: 300px;
+    height: 18.75rem; 
 }
 
 /* SKILLS END */
 
 /* PROJECTS START */
 .projects {
-    font-size: 20px;
-    margin: 200px 100px;
+    font-size: 1.25rem; 
+    margin: 12.5rem 6.25rem; 
     padding: 0;
 }
 
@@ -184,15 +206,16 @@ nav li a:hover::after {
 .p-cards {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 3.125rem 0; 
     text-align: left;
 }
 
 .p-cards .card {
     color: #ffffff;
-    border-radius: 8px;
-    background-color: #2b2b2b;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0.5rem; 
+    background-color: rgba(43, 43, 43, 0.5); 
+    backdrop-filter: blur(1px); 
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
 }
 
 .p-cards .card p {
@@ -200,7 +223,7 @@ nav li a:hover::after {
 }
 
 .p-cards .card img {
-    height: 400px;
+    height: 25rem; 
 }
 
 /* PROJECT END */
@@ -208,12 +231,12 @@ nav li a:hover::after {
 
 .end {
     width: auto;
-    font-size: 20px;
+    font-size: 1.25rem; 
     padding: 0;
-    min-height: 300px;
-    margin:300px 80px;
+    min-height: 18.75rem; 
+    margin: 18.75rem 5rem; 
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem; 
     color: #ffffff;
 }
 
@@ -223,12 +246,12 @@ nav li a:hover::after {
 @media (max-width: 1200px) {
     .banner {
         flex-direction: inline-block;
-        margin: 50px 50px 150px;
+        margin: 3.125rem 3.125rem 9.375rem; 
     }
 
     .code-window {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 1.25rem; 
     }
 }
 
@@ -239,18 +262,18 @@ nav li a:hover::after {
     }
 
     nav li {
-        margin: 10px 0;
+        margin: 0.625rem 0; 
     }
 
     .banner {
-        margin: 50px 20px 150px;
+        margin: 3.125rem 1.25rem 9.375rem; 
     }
 
-    .skills, .projects, .about{
-        margin: 50px 20px;
+    .skills, .projects, .about {
+        margin: 3.125rem 1.25rem; 
     }
 
-    .end{
+    .end {
         margin: auto;
     }
 
@@ -273,47 +296,47 @@ nav li a:hover::after {
     }
 
     .profile, .resume {
-        margin: 0 0 20px;
+        margin: 0 0 1.25rem; 
     }
 }
 
 @media (max-width: 576px) {
     nav {
         text-align: left;
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem; 
     }
 
     .banner {
-        margin: 50px 10px 100px;
+        margin: 3.125rem 0.625rem 6.25rem;
     }
 
     .skills, .projects, .about, .end {
-        margin: 20px 10px;
+        margin: 1.25rem 0.625rem;
     }
 
     .mytext h1 {
-        font-size: 24px;
+        font-size: 1.5rem; 
     }
 
     .mytext h4 {
-        font-size: 18px;
+        font-size: 1.125rem; 
     }
 
-    .about p, .end p{
-        font-size: 18px;
+    .about p, .end p {
+        font-size: 1.125rem; 
     }
 
     .s-title, .p-title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
-    @media (max-width: 400px) {
-        .banner {
-            margin: 50px 5px 100px;
-        }
-
-        .skills, .projects, .about, .end {
-            margin: 20px 5px;
-        }
+@media (max-width: 400px) {
+    .banner {
+        margin: 3.125rem 0.3125rem 6.25rem; 
     }
+
+    .skills, .projects, .about, .end {
+        margin: 1.25rem 0.3125rem; 
+    }
+}
