@@ -5,7 +5,7 @@ const codeLines = [
     ". .. about.txt location.txt contact.txt",
     "",
     "cat about.txt",
-    "Hello! I'm a cybersecurity enthusiast and a web developer.",
+    "Hello! I'm a Computer Science Student",
     "",
     "cat location.txt",
     "I'm currently based in Jakarta, Indonesia",

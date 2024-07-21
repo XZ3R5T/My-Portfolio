@@ -103,6 +103,14 @@ nav li a:hover::after {
     border-radius: 5px;
 }
 
+.linkedin-container {
+    margin-right: 0.5rem;
+}
+
+.thm-container img{
+    border-radius: 5px;
+}
+
 /* BANNER START */
 .banner {
     display: flex;
