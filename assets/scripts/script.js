@@ -1,19 +1,34 @@
-// function for smooth scrolling and anchor
 document.querySelectorAll('nav ul li a').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function(e) {
       e.preventDefault();
       
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
-
-      window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-      });
+      const href = this.getAttribute('href');
+      
+      // Check if the href is an external link
+      if (href.startsWith('http') || href.startsWith('mailto')) {
+        window.location.href = href;
+      } else {
+        // internal navigation
+        if (href.startsWith('#')) {
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        } else {
+          // external or relative link navigation
+          window.location.href = href;
+        }
+      }
+    });
   });
-});
+  
 
 const words = ["Hello", "Привет", "你好", "مرحبًا", "Salam", "こんにちは"];
 let wordIndex = 0;

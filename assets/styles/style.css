@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,38 +18,40 @@ body, html {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -1;
     background-color: black;
 }
 
 /* NAVBAR START */
 nav {
     width: 100%;
-    padding: 0.625rem; 
+    padding: 0.625rem;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: right;
-    font-size: 1.5rem; 
-    position: fixed;
-    z-index: 1000;
-    top: 0;
+    font-size: 1.5rem;
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex; 
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav li {
-    margin: 0 0.9375rem; 
+    margin: 0 0.9375rem;
 }
 
 nav li a {
     color: white;
     text-decoration: none;
-    padding: 0.625rem; 
+    padding: 0.625rem;
     display: block;
     position: relative;
 }
@@ -57,9 +60,9 @@ nav li a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 0.125rem; 
+    height: 0.125rem;
     display: block;
-    margin-top: 0.3125rem; 
+    margin-top: 0.3125rem;
     right: 0;
     background: white;
     transition: width 0.3s ease;
@@ -76,13 +79,13 @@ nav li a:hover::after {
 
 
 /* CONTENT START */
-.content {
+.index-content {
     margin-top: 14rem;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .mytext {
-    margin: 10rem; 
+    margin: 10rem;
 }
 
 
@@ -91,7 +94,7 @@ nav li a:hover::after {
     position: relative;
 }
 
-.socials img{
+.socials img {
     width: 3rem;
 }
 
@@ -107,7 +110,7 @@ nav li a:hover::after {
     margin-right: 0.5rem;
 }
 
-.thm-container img{
+.thm-container img {
     border-radius: 5px;
 }
 
@@ -118,26 +121,26 @@ nav li a:hover::after {
     text-align: left;
     justify-content: space-between;
     color: white;
-    margin: 6.25rem 6.25rem 22rem; 
+    margin: 6.25rem 6.25rem 22rem;
 }
 
 .code-window {
-    width: 35%; 
-    height: 25rem; 
+    width: 35%;
+    height: 25rem;
     background-color: #2b2b2b;
     color: #cfcfcf;
-    padding: 1.25rem; 
-    border-radius: 0.5rem; 
-    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .code-animation {
     margin: 0;
     white-space: pre-wrap;
-    font-family: 'Courier New', Courier, monospace; 
-    font-size: 0.875rem; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
     overflow: hidden;
-    max-height: 25rem; 
+    max-height: 25rem;
     overflow-y: auto;
 }
 
@@ -147,7 +150,7 @@ nav li a:hover::after {
 /* ABOUT START */
 .about {
     font-size: 1.5rem;
-    margin: 6.25rem; 
+    margin: 6.25rem;
 }
 
 .about-container {
@@ -169,106 +172,38 @@ nav li a:hover::after {
 /* ABOUT END */
 
 /* SKILLS START */
+
 .skills {
-    font-size: 1.25rem;
-    margin: 6.25rem 6.25rem; 
-    padding: 0;
+    padding: 20px;
 }
 
-.s-title {
-    text-align: center;
+.item {
+    margin-bottom: 20px;
 }
 
-.s-cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3.125rem 0; 
-    text-align: left;
+
+.progress-bar {
+    background-color: #2b2b2b;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
 }
 
-.s-cards .card {
-    color: #ffffff;
-    border-radius: 0.5rem; 
-    background-color: rgba(43, 43, 43, 0.5); 
-    backdrop-filter: blur(1px); 
-    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
+.skills .item-text .w-75 {
+    width: 75%;
 }
 
-.s-cards .card img {
-    height: 18.75rem; 
-}
 
 /* SKILLS END */
 
-/* PROJECTS START */
-
-.projects {
-    font-size: 1.25rem;
-    margin: 20rem 20rem; 
-    margin-right: 0;
-    display: flex;
-}
-
-.p-title {
-    margin-top: 10rem;
-    width: 30rem;
-}
-
-.p-cards {
-    border-radius: 1rem;
-    display: flex;
-    gap: 1.25rem;
-    width: 42rem;
-    height: 42rem;
-    overflow-x: scroll;
-    background-color: transparent;
-    margin-left: auto; 
-    margin-right: 10rem;
-}
-
-.p-cards .card{
-    color: #ffffff;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    width: 42rem;
-    height: 42rem;
-    background-color: black;
-    text-align: start;
-    border-radius: 0.5rem; 
-    background-color: rgba(43, 43, 43, 0.5); 
-    backdrop-filter: blur(1px); 
-    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1); 
-}
-
-.p-cards .card img {
-    height: 20rem;
-}
-
-.card-container {
-    padding: 1rem; 
-}
-
-.p-cards .card button{
-    width: 10rem;
-}
-
-.p-cards .card .card-title {
-    font-size: 1.5rem;
-    margin-top: 1.25rem; 
-}
-
-/* PROJECT END */
-
-
 .end {
     width: auto;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     padding: 0;
-    min-height: 18.75rem; 
-    margin: 18.75rem 5rem; 
+    min-height: 18.75rem;
+    margin: 18.75rem 5rem;
     text-align: center;
-    font-size: 1.5625rem; 
+    font-size: 1.5625rem;
     color: #ffffff;
 }
 
@@ -276,7 +211,7 @@ nav li a:hover::after {
 
 
 .modal {
-    z-index: 1050; 
+    z-index: 1050;
 }
 
 .modal-header {
@@ -288,19 +223,108 @@ nav li a:hover::after {
 }
 
 .modal-backdrop {
-    z-index: 1040; 
+    z-index: 1040;
 }
+
+/* PROJECTS_PAGE.HTML STYLES */
+.p-content {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.hero {
+    margin: 100px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.image-container:hover .image {
+    filter: blur(5px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.content {
+    padding: 20px;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.references a img {
+    width: 5rem;
+    height: auto;
+}
+
+.modal-content p {
+    color: #000;
+}
+
+.modal-content ul li {
+    color: #000;
+}
+
+/* projects page end */
+
+/* footer */
+.footer {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    height: 14rem;
+    padding: 2rem;
+    margin-top: 20rem;
+}
+
+.footer-text {
+    margin-top: 3rem;
+}
+
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
     .banner {
         flex-direction: inline-block;
-        margin: 3.125rem 3.125rem 9.375rem; 
+        margin: 3.125rem 3.125rem 9.375rem;
     }
 
     .code-window {
         width: 100%;
-        margin-top: 1.25rem; 
+        margin-top: 1.25rem;
     }
 }
 
@@ -311,28 +335,30 @@ nav li a:hover::after {
     }
 
     nav li {
-        margin: 0.625rem 0; 
+        margin: 0.625rem 0;
     }
 
     .banner {
-        margin: 3.125rem 1.25rem 9.375rem; 
+        margin: 3.125rem 1.25rem 9.375rem;
     }
 
-    .skills, .projects, .about {
-        margin: 3.125rem 1.25rem; 
+    .skills,
+    .projects,
+    .about {
+        margin: 3.125rem 1.25rem;
     }
 
     .end {
         margin: auto;
     }
 
-    .s-cards .card img, .p-cards .card img {
+    .s-cards .card img .card img {
         height: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .s-cards, .p-cards {
+    .s-cards {
         flex-direction: inline-block;
     }
 
@@ -344,48 +370,56 @@ nav li a:hover::after {
         flex-direction: inline-block;
     }
 
-    .profile, .resume {
-        margin: 0 0 1.25rem; 
+    .profile,
+    .resume {
+        margin: 0 0 1.25rem;
     }
 }
 
 @media (max-width: 576px) {
     nav {
         text-align: left;
-        padding: 0.625rem 1.25rem; 
+        padding: 0.625rem 1.25rem;
     }
 
     .banner {
         margin: 3.125rem 0.625rem 6.25rem;
     }
 
-    .skills, .projects, .about, .end {
+    .skills,
+    .projects,
+    .about,
+    .end {
         margin: 1.25rem 0.625rem;
     }
 
     .mytext h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .mytext h4 {
-        font-size: 1.125rem; 
+        font-size: 1.125rem;
     }
 
-    .about p, .end p {
-        font-size: 1.125rem; 
+    .about p,
+    .end p {
+        font-size: 1.125rem;
     }
 
-    .s-title, .p-title {
+    .s-title {
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 400px) {
     .banner {
-        margin: 3.125rem 0.3125rem 6.25rem; 
+        margin: 3.125rem 0.3125rem 6.25rem;
     }
 
-    .skills, .projects, .about, .end {
-        margin: 1.25rem 0.3125rem; 
+    .skills,
+    .projects,
+    .about,
+    .end {
+        margin: 1.25rem 0.3125rem;
     }
 }
