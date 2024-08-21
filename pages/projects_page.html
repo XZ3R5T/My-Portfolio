@@ -30,7 +30,7 @@
         </div>
         <div class="projects" id="projects">
             <div class="image-container">
-                <img src="../assets/images/siskom.png" alt="Image Description" class="image">
+                <img src="../assets/images/siskom-images/landing-page-1.png" alt="Image Description" class="image">
                 <div class="overlay">
                     <h3>SISKOM UNJ</h3>
                     <p class="details">Task given by Head of CS Studies</p>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="../assets/images/ks.png" alt="Image Description" class="image">
+                <img src="../assets/images/kampungsiber-images/landing-page-1.png" alt="Image Description" class="image">
                 <div class="overlay">
                     <h3>Kampung Siber</h3>
                     <p class="details">Alumni Project</p>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="../assets/images/pretnews.png" alt="Image Description" class="image">
+                <img src="../assets/images/pretnews-images/pretnews.png" alt="Image Description" class="image">
                 <div class="overlay">
                     <h3>PretNews</h3>
                     <p class="details">Flutter Bootcamp Final Project</p>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="../assets/images/laravel_pa.png" alt="Image Description" class="image">
+                <img src="../assets/images/laravelFP-images/home-page.png" alt="Image Description" class="image">
                 <div class="overlay">
                     <h3>Laravel Bootcamp Final Project</h3>
                     <p class="details">Laravel Bootcamp Final Project</p>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="../assets/images/python.png" alt="Image Description" class="image">
+                <img src="../assets/images/icons/python.png" alt="Image Description" class="image">
                 <div class="overlay">
                     <h3>Leaf Classifier</h3>
                     <p class="details">Assignment by our Lecturer</p>
@@ -76,6 +76,7 @@
             </div>
         </div>
     </div>
+
          <!-- footer start -->
          <footer class = "footer">
             <div class = "row">
@@ -103,29 +104,98 @@
             </div>
           </footer>
           <!-- footer end -->
-    <div class="modal fade" id="kampungSiberModal" tabindex="-1" role="dialog" aria-labelledby="kampungSiberModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="kampungSiberModalTitle">KampungSiber</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-container" style="color: black;">
-                        <h6>This project was assigned to us by our alumni as part of our final project for our Human and Computer Interaction</h6>
-                        <p>Tools used:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                            <li>Ionic Vue</li>
-                            <li>JavaScript</li>
-                        </ul>
+           
+          <div class="modal fade" id="siskomunjModal" tabindex="-1" role="dialog" aria-labelledby="siskomunjModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="siskomunjModalTitle">Siskomunj</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselSiskomControl" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/siskom-images/landing-page-1.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/siskom-images/strukturOrganisasi-page.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/siskom-images/p2m-page.png" class="d-block w-100">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselSiskomControl" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselSiskomControl" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="modal-container" style="color: black;">
+                            <h6>This project was assigned to us by our head of CS studies as the final project for the Semantic Web Course</h6>
+                            <p>Tools used:</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="references">
+                                <a href="https://github.com/Bedyyy/Jentik-Front-End">
+                                    <img src="../assets/images/github-refer.png" alt="github" class="social-icon">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+          <div class="modal fade" id="kampungSiberModal" tabindex="-1" role="dialog" aria-labelledby="kampungSiberModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="kampungSiberModalTitle">KampungSiber</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselKampungSiberControl" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/images/kampungsiber-images/landing-page-1.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/kampungsiber-images/landing-page-2.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/images/kampungsiber-images/landing-page-3.png" class="d-block w-100">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselKampungSiberControl" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselKampungSiberControl" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="modal-container" style="color: black;">
+                            <h6>This project was assigned to us by our alumni as part of our final project for our Human and Computer Interaction</h6>
+                            <p>Tools used:</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Ionic Vue</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     
     <div class="modal fade" id="pretNewsModal" tabindex="-1" role="dialog" aria-labelledby="pretNewsModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -154,43 +224,33 @@
         </div>
     </div>
 
-    <div class="modal fade" id="siskomunjModal" tabindex="-1" role="dialog" aria-labelledby="siskomunjModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="siskomunjModalTitle">Siskomunj</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-container" style="color: black;">
-                        <h6>This project was assigned to us by our head of CS studies as the final project for the Semantic Web studies</h6>
-                        <p>Tools used:</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="references">
-                            <a href="https://github.com/Bedyyy/Jentik-Front-End">
-                                <img src="../assets/images/github-refer.png" alt="github" class="social-icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal fade" id="laravelProjectModal" tabindex="-1" role="dialog" aria-labelledby="laravelProjectModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="laravelProjectModalTitle">Siskomunj</h5>
+                    <h5 class="modal-title" id="laravelProjectModalTitle">Laravel Final Project</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div id="carouselLaravelFPControl" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/images/laravelFP-images/home-page.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/laravelFP-images/profile-page.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/images/laravelFP-images/profileCH-page.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselLaravelFPControl" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselLaravelFPControl" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
                     <div class="modal-container" style="color: black;">
                         <h6>This project was part of the final project of the bootcamp i had in SanberCode, I was allowed to use templates for the frontend thus the only work i did was setting up the backend using laravel and creating the DB</h6>
                         <p>Tools used:</p>

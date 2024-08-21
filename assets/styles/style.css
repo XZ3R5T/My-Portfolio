@@ -114,6 +114,18 @@ nav li a:hover::after {
     border-radius: 5px;
 }
 
+.thm-container {
+    margin-right: 0.5rem;
+}
+
+.gitlab-container img {
+    border-radius: 5px;
+}
+
+.gitlab-container {
+    margin-right: 0.5rem;
+}
+
 /* BANNER START */
 .banner {
     display: flex;
