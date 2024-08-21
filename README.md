@@ -8,7 +8,7 @@ https://xz3r5t.github.io/My-Portfolio/
 
 ## Description
 
-This portfolio website is a single-page application that highlights my interests. It includes sections for my bio, skills, projects, and contact information.
+This portfolio website highlights a few of  my interests. It includes sections for my bio, skills, projects, and contact information.
 
 ## Installation
 
@@ -30,8 +30,9 @@ Open the website in your browser to view the portfolio. Navigate through differe
 
 ## Screenshots
 
-![Homepage](assets/previews/landing.png)
-![Projects Section](assets/previews/projects.png)
+![Homepage](assets/previews/home-page.png)
+![Skills Section](assets/previews/home-skills-page.png)
+![Projects Page](/assets/previews/projects-page.png)
 
 ## Technologies Used
 
