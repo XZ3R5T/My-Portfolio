@@ -3,9 +3,9 @@
     --secondary-color: #2b2b2b;
     --background-color: black;
     --font-family: 'Courier New', Courier, monospace;
-    --font-size-large: 1.5rem;
-    --font-size-medium: 1.3rem;
-    --font-size-small: 0.875rem;
+    --font-size-large: clamp(1.2rem, 3vw, 1.5rem);
+    --font-size-medium: clamp(1rem, 2.5vw, 1.3rem);
+    --font-size-small: clamp(0.75rem, 2vw, 0.875rem);
     --transition-duration: 0.3s;
 }
 
@@ -14,16 +14,17 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     scroll-behavior: smooth;
     font-family: var(--font-family);
     color: var(--primary-color);
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 * {
     box-sizing: border-box;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: var(--font-family); /* Use root font-family */
 }
 
 #particles-js {
@@ -39,15 +40,10 @@ html {
 /* NAVBAR START */
 nav {
     width: 100%;
-    padding: 0.625rem;
+    padding: clamp(0.5rem, 2vw, 0.625rem);
     background-color: rgba(0, 0, 0, 0.5);
     text-align: right;
-    font-size: var(--font-size-large);
-}
-
-nav .image-container {
-    position: relative;
-    display: inline-block;
+    font-size: var(--font-size-medium);
 }
 
 nav ul {
@@ -56,16 +52,17 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 nav li {
-    margin: 0 0.9375rem;
+    margin: clamp(0.5rem, 2vw, 0.9375rem);
 }
 
 nav li a {
     color: var(--primary-color);
     text-decoration: none;
-    padding: 0.625rem;
+    padding: clamp(0.4rem, 1.5vw, 0.625rem);
     display: block;
     position: relative;
 }
@@ -92,21 +89,23 @@ nav li a:hover::after {
 
 /* CONTENT START */
 .index-content {
-    margin-top: 14rem;
+    margin-top: clamp(8rem, 20vw, 14rem);
     z-index: 1;
 }
 
 .mytext {
-    margin: 10rem;
+    margin: clamp(2rem, 10vw, 10rem);
 }
 
 .socials {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 0.5rem;
     position: relative;
 }
 
 .socials img {
-    width: 3rem;
+    width: clamp(2rem, 8vw, 3rem);
 }
 
 .github-container,
@@ -126,19 +125,22 @@ nav li a:hover::after {
 /* BANNER START */
 .banner {
     display: flex;
+    flex-direction: column; /* Mobile-first */
     align-items: center;
-    text-align: left;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     color: var(--primary-color);
-    margin: 6.25rem 6.25rem 22rem;
+    margin: clamp(2rem, 10vw, 6.25rem) clamp(1rem, 5vw, 6.25rem) clamp(6rem, 20vw, 22rem);
 }
 
 .code-window {
-    width: 35%;
-    height: 25rem;
+    width: 100%; /* Full width on mobile */
+    max-width: 35rem; /* Cap width on larger screens */
+    height: auto;
+    min-height: 15rem;
     background-color: var(--secondary-color);
     color: #cfcfcf;
-    padding: 1.25rem;
+    padding: clamp(0.8rem, 3vw, 1.25rem);
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
@@ -158,35 +160,33 @@ nav li a:hover::after {
 /* ABOUT START */
 .about {
     font-size: var(--font-size-medium);
-    margin: 10.25rem;
+    margin: clamp(2rem, 10vw, 10.25rem);
 }
 
 .about-container {
-    margin: 10vh;
+    margin: clamp(2vh, 5vw, 10vh);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Mobile-first */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-.resume {
-    flex: 1;
-    margin-top: 10vh;
-    margin-left: 8vw;
-}
-
+.resume,
 .profile {
     flex: 1;
+    margin: 0;
 }
 
 /* ABOUT END */
 
 /* SKILLS START */
 .skills {
-    padding: 20px;
+    padding: clamp(1rem, 5vw, 20px);
 }
 
 .item {
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 3vw, 20px);
 }
 
 .progress-bar {
@@ -203,13 +203,12 @@ nav li a:hover::after {
 /* SKILLS END */
 
 .end {
-    width: auto;
-    font-size: 1.25rem;
+    width: 100%;
+    font-size: clamp(1rem, 3vw, 1.5625rem);
     padding: 0;
     min-height: 18.75rem;
-    margin: 18.75rem 5rem;
+    margin: clamp(2rem, 10vw, 18.75rem) clamp(1rem, 5vw, 5rem);
     text-align: center;
-    font-size: 1.5625rem;
     color: var(--primary-color);
 }
 
@@ -233,11 +232,11 @@ nav li a:hover::after {
 /* PROJECTS_PAGE.HTML STYLES */
 .p-content {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: clamp(2rem, 10vw, 10rem);
 }
 
 .hero {
-    margin: 100px;
+    margin: clamp(2rem, 10vw, 100px);
     text-align: center;
 }
 
@@ -251,7 +250,7 @@ nav li a:hover::after {
 
 .image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: filter var(--transition-duration) ease;
 }
@@ -282,139 +281,135 @@ nav li a:hover::after {
 }
 
 .content {
-    padding: 20px;
+    padding: clamp(1rem, 3vw, 20px);
 }
 
 .details {
-    margin-bottom: 20px;
+    margin-bottom: clamp(1rem, 3vw, 20px);
 }
 
 .references a img {
-    width: 5rem;
+    width: clamp(3rem, 10vw, 5rem);
     height: auto;
 }
-
-/* projects page end */
 
 /* footer */
 .footer {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
-    height: 14rem;
-    padding: 2rem;
-    margin-top: 20rem;
+    height: auto;
+    min-height: 10rem;
+    padding: clamp(1rem, 5vw, 2rem);
+    margin-top: clamp(5rem, 20vw, 20rem);
 }
 
 .footer-text {
-    margin-top: 3rem;
+    margin-top: clamp(1rem, 5vw, 3rem);
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
     .banner {
-        flex-direction: column;
-        margin: 3.125rem 3.125rem 9.375rem;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
     }
 
     .code-window {
-        width: 100%;
-        margin-top: 1.25rem;
+        width: 35%;
+    }
+
+    .about-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .resume {
+        margin-top: 10vh;
+        margin-left: 8vw;
     }
 }
 
 @media (max-width: 992px) {
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
     }
 
     nav li {
-        margin: 0.625rem 0;
+        margin: 0.625rem;
     }
 
-    .banner {
-        margin: 3.125rem 1.25rem 9.375rem;
-    }
-
+    .banner,
     .skills,
     .projects,
     .about {
-        margin: 3.125rem 1.25rem;
+        margin: clamp(1.5rem, 5vw, 3.125rem) clamp(0.5rem, 2vw, 1.25rem);
     }
 
     .end {
-        margin: auto;
-    }
-
-    .s-cards .card img .card img {
-        height: auto;
+        margin: clamp(1.5rem, 5vw, 3.125rem) auto;
     }
 }
 
 @media (max-width: 768px) {
+    nav {
+        text-align: center;
+        padding: clamp(0.5rem, 2vw, 0.625rem) 1.25rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .s-cards {
         flex-direction: column;
     }
 
     .code-window {
-        height: auto;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .profile,
-    .resume {
-        margin: 0 0 1.25rem;
+        min-height: 12rem;
     }
 }
 
 @media (max-width: 576px) {
-    nav {
-        text-align: left;
-        padding: 0.625rem 1.25rem;
-    }
-
-    .banner {
-        margin: 3.125rem 0.625rem 6.25rem;
-    }
-
-    .skills,
-    .projects,
-    .about,
-    .end {
-        margin: 1.25rem 0.625rem;
-    }
-
     .mytext h1 {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
     }
 
     .mytext h4 {
-        font-size: 1.125rem;
+        font-size: clamp(0.9rem, 4vw, 1.125rem);
     }
 
     .about p,
     .end p {
-        font-size: 1.125rem;
+        font-size: clamp(0.9rem, 4vw, 1.125rem);
     }
 
     .s-title {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .banner {
-        margin: 3.125rem 0.3125rem 6.25rem;
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
     }
 
+    .banner,
     .skills,
     .projects,
     .about,
     .end {
-        margin: 1.25rem 0.3125rem;
+        margin: clamp(0.8rem, 3vw, 1.25rem) clamp(0.3rem, 1.5vw, 0.625rem);
+    }
+}
+
+@media (max-width: 400px) {
+    .banner,
+    .skills,
+    .projects,
+    .about,
+    .end {
+        margin: clamp(0.8rem, 3vw, 1.25rem) clamp(0.2rem, 1vw, 0.3125rem);
+    }
+
+    .socials img {
+        width: clamp(1.5rem, 6vw, 2rem);
     }
 }
